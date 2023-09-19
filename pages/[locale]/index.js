@@ -3,7 +3,7 @@ import { getStaticPaths, makeStaticProps } from '../../lib/getStatic'
 
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
-
+import LoadingModal from '../../components/LoadingModal'
 import Link from '../../components/Link'
 
 const Homepage = () => {
@@ -14,6 +14,7 @@ const Homepage = () => {
       <main>
         <Header heading={t('h1')} title={t('title')} />
         <div>
+          <LoadingModal/>
           <Link href='/second-page'>
             <button
               type='button'
